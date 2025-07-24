@@ -5,6 +5,8 @@ dependencies {
 
     implementation 'org.springframework.boot:spring-boot-starter'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'com.netflix.graphql.dgs:dgs-starter-test'
 }
 
 generateJava {

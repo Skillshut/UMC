@@ -49,4 +49,8 @@ subprojects {
     test {
         useJUnitPlatform()
     }
+
+    repositories {
+        mavenCentral()
+    }
 }
