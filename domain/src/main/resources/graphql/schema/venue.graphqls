@@ -7,3 +7,10 @@ type Venue {
 input SaveVenueInput {
     name: String!
 }
+
+type VenueRecent {
+    id: ID!
+    externalId: FullExternalId!
+    name: String!
+    recentEvents(limit: Int = 5): [Event!]!
+}
