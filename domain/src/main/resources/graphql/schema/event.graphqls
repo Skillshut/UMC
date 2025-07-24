@@ -1,0 +1,22 @@
+type Event {
+    id: ID!
+    name: String!
+    startTime: String!
+    endTime: String!
+    venues: [Venue!]!
+}
+
+input CreateEventInput {
+    venueReferenceId: String!
+    name: String!
+    startTime: String!
+    endTime: String!
+}
+
+type EventWithVenue {
+    id: ID!
+    name: String!
+    startTime: String!
+    endTime: String!
+    venue: Venue!
+}
